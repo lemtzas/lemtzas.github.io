@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<game>
+	<title>Tinted</title>
+	<release-date>????, 2014</release-date>
+	<website>http://tinted.lemtzas.com/</website>
+	<press-can-request-copy>TRUE</press-can-request-copy>
+
+	<platforms>
+		<platform>
+			<name>PC / Mac / Linux</name>
+			<link>http://lemtzas.itch.io/tinted</link>
+		</platform>
+	</platforms>
+	
+	<prices>
+		<price>
+			<currency>Alpha</currency>
+			<value>$0</value>
+		</price>
+		<price>
+			<currency>Beta</currency>
+			<value>$5</value>
+		</price>
+		<price>
+			<currency>At Release</currency>
+			<value>$10</value>
+		</price>
+	</prices>
+
+	<description>
+		A minimalist physics...racer? The goal is to pull a ball through the levels as quickly as possible without working up so much momentum that you destroy yourself in the process. It's a bit harder than it sounds.
+	</description>
+	
+	<history>
+		The original idea for this game was sparked in 2008 or 2009 in a game design and development course. It's since gone through many, <i>many</i> changes. I started development back up in November 2013 and worked on it on and off until now. The game was first publicly shown at GAMCON.
+	</history>
+
+	<features>
+		<feature>Pixel-perfect collision!</feature>
+		<feature>Simulated mass!</feature>
+		<feature>Easily make custom levels with your favorite image editing software!</feature>
+		<!-- <feature>Includes something really interesting about the game which players will love.</feature>
+		<feature>This feature line is about the 8-bit pixels that are no doubt featuring in this game.</feature>
+		<feature>Since it is unlikely that the audio isn't fucking amazing, say something about the audio, maybe?</feature>
+		<feature>Make sure to stress that everything about this game is absolutely fabulous.</feature>
+		<feature>Something to wrap up this 5-point feature list with a nice ring to it.</feature> -->
+	</features>
+	
+	<!-- <trailers>
+		<trailer>
+			<name>Trailer</name>
+			<youtube>7jQbITg0MSk</youtube>
+			<vimeo>23571681</vimeo>
+		</trailer>
+		<trailer>
+			<name>Gameplay Video</name>
+			<youtube>7jQbITg0MSk</youtube>
+			<vimeo>23571681</vimeo>
+		</trailer>
+	</trailers> -->
+	
+	<!-- <awards>
+		<award>
+			<description>Winner in this highly relevant contest.</description>
+			<info>Award Location, 20 October, 1989</info>
+		</award>
+		<award>
+			<description>Nomination for this prestigious award.</description>
+			<info>Award Ceremony, 4 December, 1991</info>
+		</award>
+		<award>
+			<description>Winner in this highly relevant contest.</description>
+			<info>Award Location, 20 October, 1989</info>
+		</award>
+		<award>
+			<description>Nomination for this prestigious award.</description>
+			<info>Award Ceremony, 4 December, 1991</info>
+		</award>
+	</awards> -->
+	
+	<quotes>
+		<quote>
+			<description>This is so much harder than I thought it would be!</description>
+			<name>Unknown Attendee</name>
+			<website>GAMCON</website>
+			<link>http://http://www.gamconvention.com/</link>
+		</quote>
+		<!-- <quote>
+			<description>This is the longest second of my life!</description>
+			<name>Unknown Attendee</name>
+			<website>GAMCON</website>
+			<link>http://http://www.gamconvention.com/</link>
+		</quote> -->
+		<quote>
+			<description>Deceptively evil.</description>
+			<name>Unknown Attendee</name>
+			<website>GAMCON</website>
+			<link>http://http://www.gamconvention.com/</link>
+		</quote>
+		<quote>
+			<description>There is a point at which you must realize: defeat has come.</description>
+			<name>Unknown Attendee</name>
+			<website>GAMCON</website>
+			<link>http://http://www.gamconvention.com/</link>
+		</quote>
+		<!-- <quote>
+			<description>A second sounds like a short time. It's not.</description>
+			<name>Unknown Attendee</name>
+			<website>GAMCON</website>
+			<link>http://http://www.gamconvention.com/</link>
+		</quote> -->
+		<quote>
+			<description>it's like a combination sperm travel and Ninja Warrior</description>
+			<name>Andarel</name>
+		</quote>
+	</quotes>
+  <!--
+  	<quote>
+			<description>An extremely positive quote from a rather insignificant person. Also great.</description>
+			<name>Some Guy</name>
+			<website>This Page Is Visited By 12 Visitors A Month</website>
+			<link>http://</link>
+		</quote>
+		<quote>
+			<description>I pretend to love this game even though I do not actually understand it.</description>
+			<name>Pretentious Bastard</name>
+			<website>Artsy Page</website>
+			<link>http://</link>
+		</quote>
+		<quote>
+			<description>HOLY SHIT SO AMAZING</description>
+			<name>Caps Guy</name>
+			<website>Angry Review</website>
+			<link>http://</link>
+		</quote>
+	</quotes> -->
+	
+	<!-- <additionals>
+		<additional>
+			<title>Original Soundtrack</title>
+			<description>Available for free from</description>
+			<link>http://somemusicsite.com/thislink</link>
+		</additional>
+		<additional>
+			<title>Release Blog Post</title>
+			<description>The blog-post through which this game was released is available at</description>
+			<link>http://vlambeer.com/bloglink</link>
+		</additional>
+	</additionals> -->
+	
+	<credits>
+		<credit>
+			<person>Lemtzas</person>
+			<website>www.lemtzas.com</website>
+			<role>Designer, Coder</role>
+		</credit>
+		<!-- <credit>
+			<person>Nolan_Exe</person>
+			<website>https://soundcloud.com/nolan-exe</website>
+			<role>Composer, Audio</role>
+		</credit> -->
+		<!-- <credit>
+			<person>Eklipz</person>
+			<website>www.olivertwist.com</website>
+			<role>QA</role>
+		</credit> -->
+	</credits>
+</game>

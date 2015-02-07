@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><!--<![endif]-->
+<head>
+{% include head.html %}
+</head>
+
+<body id="post" itemscope itemtype="http://schema.org/WebPage">
+
+{% include navigation.html %}
+<div id="everything" class="footer-flush-wrap">
+  <div class="container-fluid">
+    <ul class="search-results post-list"></ul>
+  </div>
+
+  {% if page.headline or page.title %}
+    {% assign ARTICLE = true %}
+    {% assign lwidth = 3 %}
+    {% assign rwidth = 9 %}
+  {% else %}
+    {% assign SPLASH = true %}
+    {% assign lwidth = 4 %}
+    {% assign rwidth = 8 %}
+  {% endif %}
+  <div class="hentry footer-flush-main container-fluid full-to-padded" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+      <article>
+        <div class="col-md-{{lwidth}} {% if ARTICLE %}col-md-pull-{{rwidth}}{%endif%} text-center full-to-padded">
+          {% include author-bio.html %}
+        </div>
+        <div class="col-md-{{rwidth}} {% if ARTICLE %}col-md-push-{{lwidth}}{%endif%} hentry full-to-padded">
+          {% if ARTICLE %}
+          <header class="row">
+            <div class="col-xs-6 col-sm-3"> <!-- date and edit date -->
+              {% if page.date %}
+              <i class="glyphicon glyphicon-calendar" title="Date Published" alt="Date Published">
+              </i>
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%Y.%m.%d" }}</time>
+              <br />
+              {% endif %}
+              {% if page.modified %}
+              <i class="glyphicon glyphicon-pencil" title='Date Modified' alt='Date Modified'>
+              </i>
+              <time datetime="{{ page.modified | date_to_xmlschema }}" itemprop="dateModified">{{ page.modified | date: "%Y.%m.%d" }}</time>
+              {% endif %}
+            </div>
+            <div class="col-xs-6 col-sm-3 col-sm-push-6 text-right"> <!-- permalink and categories -->
+              {% if site.disqus_shortname and page.comments %}
+              <span class="entry-comments"><i class="icon-comment-alt"></i> <a href="#disqus_thread">Comment</a></span>
+              {% endif %}
+              <a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}" itemprop="url"><i class="glyphicon glyphicon-link" title="Permalink" alt="Permalink"></i></a><br />
+              {% if page.tags.size > 0 %}
+                {% for tag in page.tags %}
+                <a href="{{ site.url }}/tags.html#{{ tag | cgi_encode }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+                {% endfor %}
+              {% else %}
+                No Tags.
+              {% endif%}
+              <a href="http://test.lemtzas.com/tags.html"><i class="glyphicon glyphicon-tags" title="Tags" alt="Tags"></i></a>
+            </div>
+            <div class="col-sm-6 col-sm-pull-3">
+              {% if page.link %}
+                <h1 class="entry-title text-center" itemprop="headline"><a href="{{ page.link }}">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %} <span class="link-arrow">&rarr;</span></a></h1>
+              {% else %}
+                <h1 class="entry-title text-center" itemprop="headline">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}{% endif %}</h1>
+              {% endif %}
+            </div>
+          </header>
+          {% endif %}
+          {{ content }}
+
+          {% if site.disqus_shortname and page.comments %}<div id="disqus_thread"></div>{% endif %}
+        </div>
+      </div>
+  </div>
+</div>
+
+{% include footer.html %}
+
+{% include scripts.html %}          
+
+</body>
+</html>

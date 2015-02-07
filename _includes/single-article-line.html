@@ -1,0 +1,32 @@
+
+<article class="row">
+  <div class="col-sm-4 col-md-3"> <!--date-->
+    <h2 class="text-center-right-xs">
+    <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time></small>
+    </h2>
+  </div>
+  <div class="col-sm-6 col-md-7"> <!--title-->
+    <h2 class="text-center-xs">
+      <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+    </h2>
+  </div>
+  {% if post.image.thumb %}
+    {% unless HIDETHUMB %}
+      <div class="col-sm-2 col-md-2 image-center-right-xs"> <!--thumb-->
+        <img style="max-width:100%;height:auto;margin-bottom:10px;" src="/images/{{ post.image.thumb }}" />
+      </div>
+    {% endunless %}
+  {% endif %}
+  {% if post.modified %}
+    <div class="col-sm-4 col-md-3 hidden-xs"> <!--modified-->
+      <small class="pull-right" style="color:#999"><time datetime="{{ page.modified }}" itemprop="dateModified">{{ post.modified | date: "%B %d, %Y" }} <span class="glyphicon glyphicon-pencil"></span></time></small>
+    </div>
+    <div class="col-sm-6 col-md-7 text-center-xs"> <!--description-->
+      {{ post.description }}
+    </div>
+  {% else %}
+    <div class="col-sm-6 col-sm-offset-4 col-md-7 col-md-offset-3 text-center-xs"> <!--description-->
+      {{ post.description }}
+    </div>
+  {% endif %}
+</article>

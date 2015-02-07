@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% include head.html %}
+</head>
+
+<body id="page" itemscope itemtype="http://schema.org/WebPage">
+
+{% include navigation.html %}
+
+<div id="everything" class="footer-flush-wrap">
+  <div class="container-fluid">
+    <ul class="search-results post-list"></ul>
+  </div>
+  <article class="hentry footer-flush-main container-fluid full-to-padded">
+    <h1 class="text-center entry-title">{% if page.headline %}{{ page.headline }}{% else %}{{ page.title }}</h1>{% endif %}
+    {{ content }}
+  </article>
+</div>
+
+{% include footer.html %}
+
+{% include scripts.html %}          
+
+</body>
+</html>

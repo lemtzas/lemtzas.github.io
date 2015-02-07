@@ -1,0 +1,42 @@
+<footer id="footer" class="flushed-footer navbar-inverse">
+  <div class="container" role="navigation" style="padding: 0px;">
+    <div class="col-xs-6 col-sm-2 col-md-2">
+      {% if page.previous %}
+      <a href="{{ site.url }}{{ page.previous.url }}" title="{{ page.previous.title }}">
+        <span class="btn btn-default">
+          <i class="glyphicon glyphicon-arrow-left" title="Previous post" alt="Previous post"></i>
+        </span>
+      </a>
+      {% elsif page.next %}
+      <button class="btn btn-default disabled" title="{{ page.previous.title }}"><i class="glyphicon glyphicon-arrow-left" title="Previous post" alt="Previous post"></i></button>
+      {% else %}
+
+      {% endif %}
+    </div>
+    <div class="col-xs-6 col-xs-push-0 col-sm-2 col-sm-push-8 col-md-2 col-md-push-8 text-right">
+      {% if page.next %}
+      <a href="{{ site.url }}{{ page.next.url }}" class="pull-right" title="{{ page.next.title }}">
+        <span class="btn btn-default">
+          <i class="glyphicon glyphicon-arrow-right" title="Next post" alt="Next post"></i>
+        </span>
+      </a>
+      {% elsif page.previous %}
+      <button class="btn btn-default disabled pull-right" title="{{ page.next.title }}"><i class="glyphicon glyphicon-arrow-right" title="Next post" alt="Next post"></i></button>
+      {% else %}
+      
+      {% endif %}
+    </div>
+    <div class="clearfix visible-xs"></div>
+    <div class="col-sm-8 col-sm-pull-2 col-md-8 col-md-pull-2 text-center text-muted" style="padding-top: 1rem; ">
+      <a href="/" style="color: #fff;">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</a><br class="visible-xs"/> Powered by <a href="http://jekyllrb.com" style="color: #fff;">Jekyll</a> using <a href="http://getbootstrap.com/" style="color: #fff;">Bootstrap</a>.
+    </div>
+  </nav>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>

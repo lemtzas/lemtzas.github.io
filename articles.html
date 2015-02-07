@@ -1,0 +1,15 @@
+---
+layout: page
+permalink: /articles/index.html
+title: Articles
+description: "An archive of posts sorted by date."
+image:
+  feature: feat/tinted-mimic-ai.png
+---
+
+{% for post in site.posts %}
+  {% unless post.hidden %}
+    {% include single-article-line.html %}
+    <hr/>
+  {% endunless %}
+{% endfor %}

@@ -1,0 +1,51 @@
+
+{% if BGFILL %}
+  <article class="row project bged-project img-rounded pixelated" style="background-image:url(/images/{{ BGFILL }});">
+    <div class="col-sm-9 col-md-10 project-main text-center-xs">
+      <h2>
+        <a href="{{ site.url }}{{ post.url }}" >{{ post.title }}</a>
+      </h2>
+      {{ post.description }}
+    </div>
+    <div class="col-sm-3 col-md-2 project-buttons text-center-xs">
+      {% if post.status %}
+        <a href="{{ site.url }}{{ post.url }}" >
+          <span class="btn btn-default project-link full-sm">{{ post.status }}</span>
+        </a>
+      {% endif %}
+      {% for link in post.links %}
+        <a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>
+          <span class="btn btn-default project-link full-xs">{{ link.title }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </article>
+  {% else %}
+  <article class="row project thumbnailed-project img-rounded pixelated">
+    {% if post.image.thumb %}
+    <div class="col-sm-3 text-center">
+      <img style="max-width:100%;height:auto;" src="/images/{{ post.image.thumb }}" />
+    </div>
+    <div class="col-md-7 project-main text-center-xs">
+    {%else %}
+    <div class="col-md-10 project-main text-center-xs">
+    {% endif %}
+      <h2>
+        <a href="{{ site.url }}{{ post.url }}" >{{ post.title }}</a>
+      </h2>
+      {{ post.description }}
+    </div>
+    <div class="col-md-2 project-buttons text-center-xs">
+      {% if post.status %}
+      <a href="{{ site.url }}{{ post.url }}" >
+        <span class="btn btn-default project-link full-sm">{{ post.status }}</span>
+      </a>
+      {% endif %}
+      {% for link in post.links %}
+        <a href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}>
+          <span class="btn btn-default project-link full-sm">{{ link.title }}</span>
+        </a>
+      {% endfor %}
+    </div>
+  </article>
+{% endif %}

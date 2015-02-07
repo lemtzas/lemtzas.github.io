@@ -1,0 +1,31 @@
+---
+layout: page
+permalink: /projects/
+title: Projects
+tagline: A List of Posts
+tags: [blog]
+---
+
+{% for post in site.posts %} 
+  {% if post.image.bgfill %}
+    {% assign BGFILL = post.image.bgfill %}
+  {% elsif post.image.feature %}
+    {% assign BGFILL = post.image.feature %}
+  {% else %}
+    {% assign BGFILL = false %}
+  {% endif %}
+
+  {% unless post.next %} 
+    <h1>{{ post.date | date: '%Y' }}</h1>
+  {% else %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+    {% if year != nyear %}
+      <h1>{{ post.date | date: '%Y' }}</h1>
+    {% else %}
+      <br />
+    {% endif %}
+  {% endunless %}
+
+  {% include project-bar.html %}
+{% endfor %}
