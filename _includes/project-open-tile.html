@@ -1,0 +1,21 @@
+<article class="project-sample">
+  <a href="{{ site.url }}{{ post.url }}" >
+    <div class="preview pixelated" {%if PREVIEW %}style="background-image:url(/images/{{ PREVIEW }});"{%endif%}>
+    {% if post.status %}
+      <!-- <a class="status" href="{{ site.url }}{{ post.url }}" > -->
+        <span class="btn btn-default status">{{ post.status }}</span>
+      <!-- </a> -->
+    {% endif %}
+
+    {% for link in post.links %}
+      <!-- <a class="status" href="{% if link.external %}{{ link.url }}{% else %}{{ site.url }}{{ link.url }}{% endif %}" {% if link.external %}target="_blank"{% endif %}> -->
+        <span class="btn btn-default status">{{ link.title }}</span>
+      <!-- </a> -->
+    {% endfor %}
+    </div>
+  </a>
+  
+  <h2>
+    <a href="{{ site.url }}{{ post.url }}" ><span class="title">{{ post.title }}{%if post.tagline%},</span> <span class="tagline">{{ post.tagline }}{%endif%}</span></a>
+  </h2>
+</article>
