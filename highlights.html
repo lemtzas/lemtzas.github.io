@@ -1,0 +1,20 @@
+---
+layout: page
+permalink: /highlights/
+title: Highlights
+tagline: A List of Posts
+tags: [blog]
+---
+
+{% assign highlights = site.tags.highlight | sort:'highlight'%}
+{% for post in highlights %}
+  {% if post.image.bgfill %}
+    {% assign PREVIEW = post.image.bgfill %}
+  {% elsif post.image.feature %}
+    {% assign PREVIEW = post.image.feature %}
+  {% else %}
+    {% assign PREVIEW = false %}
+  {% endif %}
+
+  {% include project-open-tile.html %}
+{% endfor %}
