@@ -42,11 +42,11 @@ bing_verify:
 links:
   - title: About
     url: /about
-  - title: Projects
-    url: /projects
   - title: Current
     url: /current
-  - title: Quotes
+  - title: Projects
+    url: /projects
+  - title: Quotewall
     url: /quotes
   - title: Blog
     url: http://blog.lemtzas.com

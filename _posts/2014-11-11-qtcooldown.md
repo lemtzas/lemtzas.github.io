@@ -3,7 +3,6 @@ layout: post
 title: QtCooldown Maintenance
 description: "Maintenance on a skill cooldown plugin for Wildstar"
 category: projects
-current: true
 tags: [lua,addon]
 ---
 

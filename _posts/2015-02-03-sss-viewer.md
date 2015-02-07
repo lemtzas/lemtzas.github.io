@@ -3,9 +3,10 @@ layout: post
 title: SSSV
 tagline: near-realtime Screenshot Saturday Viewer
 description: ""
+current: true
+highlight: 3
 category: projects
 tags: [webdev,highlight]
-highlight: 3
 image:
   feature: feat/sss-viewer.png
 ---

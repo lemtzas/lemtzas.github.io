@@ -5,7 +5,7 @@ current: true
 status: Alpha
 description: "A game about jumping on rockets made for the 2014 Cyberpunk Jam."
 category: projects
-tags: [lua,love2d,gamedev,game]
+tags: [lua,love2d,gamedev,game, current]
 image:
   feature: feat/rocket-punk.png
 ---

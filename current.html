@@ -5,26 +5,31 @@ title: Current Projects
 tags: [blog]
 ---
 
-{% for post in site.posts %} 
-  {% if post.current %}
-    {% if post.image.bgfill %}
-      {% assign BGFILL = post.image.bgfill %}
-    {% elsif post.image.feature %}
-      {% assign BGFILL = post.image.feature %}
-    {% else %}
-    {% assign BGFILL = false %}
-    {% endif %}
-    {% unless post.next %} 
-    <h1>{{ post.date | date: '%Y' }}</h1>
-    {% else %}
-      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
-      {% if year != nyear %}
-        <h1>{{ post.date | date: '%Y' }}</h1>
-      {% else %}
-        <br />
-      {% endif %}
-    {% endunless %}
-    {% include project-bar.html %}
+
+
+{% assign posts = site.tags.current | where:"current",true %}
+{% for post in posts %}
+  {% if post.image.bgfill %}
+    {% assign PREVIEW = post.image.bgfill %}
+  {% elsif post.image.feature %}
+    {% assign PREVIEW = post.image.feature %}
+  {% else %}
+    {% assign PREVIEW = false %}
   {% endif %}
+  
+  {% comment %}
+  {% unless post.next %} 
+  <h1>{{ post.date | date: '%Y' }}</h1>
+  {% else %}
+    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+    {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+    {% if year != nyear %}
+      <h1>{{ post.date | date: '%Y' }}</h1>
+    {% else %}
+      <br />
+    {% endif %}
+  {% endunless %}
+  {% endcomment %}
+  
+  {% include project-open-tile.html %}
 {% endfor %}
