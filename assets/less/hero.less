@@ -1,0 +1,42 @@
+.hero-unit {
+  text-align: center;
+  overflow: hidden;
+  height: 0px;
+  width: 100%;
+
+  padding-bottom: 56.25%;
+
+  @media (min-width: @screen-sm-min) {
+    padding-bottom: 28.125%;
+  }
+
+  @media (min-width: @screen-lg-min) {
+    padding-bottom: 14.0625%;
+  }
+
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    max-width: 1200px;
+  }
+  .image-credit {
+    font-size: 1.5rem;
+    color: white;
+    text-align: left;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+  }
+}

@@ -1,0 +1,44 @@
+#everything {
+  .container;
+  padding-left:0;
+  padding-right:0;
+
+  @media (min-width: @screen-sm-min) {
+    
+    padding-left: @grid-gutter-width/2;
+    padding-right: @grid-gutter-width/2;
+  }
+}
+
+.full-to-padded {
+  padding-left:0;
+  padding-right:0;
+
+  @media (min-width: @screen-sm-min) {
+    
+    padding-left: @grid-gutter-width/2;
+    padding-right: @grid-gutter-width/2;
+  }
+}
+
+.date-headline {
+  margin: 0 auto;
+
+  //replicate the width portion of .make-xs-column and friends
+  @media (min-width: @grid-float-breakpoint) {
+    width: percentage((11 / @grid-columns));
+  }
+
+  @media (min-width: @screen-sm-min) {
+    width: percentage((11 / @grid-columns));
+  }
+
+  @media (min-width: @screen-md-min) {
+    width: percentage((8 / @grid-columns));
+  }
+
+  @media (min-width: @screen-lg-min) {
+    width: percentage((6 / @grid-columns));
+  }
+  
+}

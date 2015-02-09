@@ -10,21 +10,21 @@ module.exports = function(grunt) {
           optimization: 2
         },
         files: {
-          // "/home/lemtzas/jekyll/portfolio/assets/css/style.css": "assets/less/styles.less", // destination file and source file
+          "/home/lemtzas/jekyll/portfolio/assets/css/style.css": "assets/less/styles.less", // destination file and source file
           "assets/css/style.css": "assets/less/styles.less" // destination file and source file
         }
       }
+    },
+    watch: {
+      styles: {
+        files: ['assets/less/**/*.less'], // which files to watch
+        tasks: ['less'],
+        options: {
+          nospawn: true
+        }
+      }
     }
-    // watch: {
-    //   styles: {
-    //     files: ['assets/less/**/*.less'], // which files to watch
-    //     tasks: ['less'],
-    //     options: {
-    //       nospawn: true
-    //     }
-    //   }
-    // }
   });
 
-  grunt.registerTask('default', ['less']);
+  grunt.registerTask('default', ['less', 'watch']);
 };

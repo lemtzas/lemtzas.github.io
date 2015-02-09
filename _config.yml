@@ -42,7 +42,7 @@ bing_verify:
 links:
   - title: About
     url: /about
-  - title: "Projects:"
+  - title: "Projects"
     url: "#"
     dropdown:
     - title: All
@@ -51,16 +51,14 @@ links:
     - title: Current
       url: /current
     - title: Completed
-      url: /current
+      url: /complete
     - title: On Hold
-      url: /current
-    - title: Quotewall
-      url: /quotes
+      url: /hold
+  - title: Quotewall
+    url: /quotes
   - title: Blog
     url: http://blog.lemtzas.com
     external: true
-  - title: Stream
-    url: /stream
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York

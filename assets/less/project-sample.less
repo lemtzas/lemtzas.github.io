@@ -1,0 +1,60 @@
+.project-sample {
+  .text-center;
+  // background-color: rgb(200,200,200);
+
+  .preview {
+    position: relative;
+    width: 100%;
+    padding-bottom: 20%;
+    height: 0;
+
+    background: center no-repeat;
+    background-size: cover;
+    background-color: black;
+    background-image: url("/images/project-strip-default.png");
+    outline: 1px solid rgb(100,100,100);
+ 
+
+    // height: 100px;
+    @media (min-width: @screen-sm-min) {
+      // height: 150px;
+      outline: none;
+      border: 1px solid rgb(100,100,100); 
+    }
+    @media (min-width: @screen-md-min) {
+      // height: 200px;
+      outline: none;
+      border: 1px solid rgb(100,100,100); 
+    }
+
+    /* Height transition. */
+    -webkit-transition: height 0.8s;
+    -moz-transition: height 0.8s;
+    transition: height 0.8s;
+    margin-bottom: 5px;
+
+    .status {
+      float: right;
+      margin: 5px;
+    }
+  }
+
+  margin-top: @grid-gutter-width/2;
+  margin-bottom: @grid-gutter-width/2;
+  @media (min-width: @screen-sm-min) {
+    margin-top: @grid-gutter-width;
+    margin-bottom: @grid-gutter-width;
+  }
+
+  h2 {
+    .title {
+      text-decoration: none !important;
+      color: @gray-darker !important;
+    }
+
+    .tagline {
+      text-decoration: none !important;
+      color: lighten(@gray-base, 70%) !important;
+    }
+  }
+}

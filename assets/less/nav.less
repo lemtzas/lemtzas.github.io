@@ -1,0 +1,18 @@
+.inverse-dropdown{
+  background-color: @navbar-inverse-bg;
+  border-color: @navbar-inverse-border;
+  &>li>a{
+    color: @navbar-inverse-link-color;
+    &:hover{
+      color: @navbar-inverse-link-hover-color;
+      background: @navbar-inverse-link-hover-bg;
+    }
+    &:active{
+      color: @navbar-inverse-link-active-color;
+      background: @navbar-inverse-link-active-bg;
+    }
+  }
+  &>.divider {
+    background-color: @navbar-inverse-border;
+  }
+}
