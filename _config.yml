@@ -42,10 +42,15 @@ bing_verify:
 links:
   - title: About
     url: /about
+  - title: Projects:
+  - title: All
+    url: /projects
   - title: Current
     url: /current
-  - title: Projects
-    url: /projects
+  - title: Completed
+    url: /current
+  - title: On Hold
+    url: /current
   - title: Quotewall
     url: /quotes
   - title: Blog
