@@ -44,21 +44,18 @@ links:
     url: /about
   - title: "Projects:"
     url: "#"
-  - title: All
-    url: /projects
-    class: sublink
-  - title: Current
-    url: /current
-    class: sublink
-  - title: Completed
-    url: /current
-    class: sublink
-  - title: On Hold
-    url: /current
-    class: sublink
-  - title: Quotewall
-    url: /quotes
-    class: sublink
+    dropdown:
+    - title: All
+      url: /projects
+    - divider: true
+    - title: Current
+      url: /current
+    - title: Completed
+      url: /current
+    - title: On Hold
+      url: /current
+    - title: Quotewall
+      url: /quotes
   - title: Blog
     url: http://blog.lemtzas.com
     external: true
