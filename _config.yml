@@ -42,7 +42,7 @@ bing_verify:
 links:
   - title: About
     url: /about
-  - title: Projects:
+  - title: "Projects:"
     url: "#"
   - title: All
     url: /projects
