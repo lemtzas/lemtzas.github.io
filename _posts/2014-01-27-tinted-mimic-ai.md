@@ -4,7 +4,7 @@ title: Tinted Mimic AI
 tagline: a quick and dirty AI
 description: "A quick AI for Tinted. It probabilistically mimics the player's actions."
 category: projects
-tags: [lua,love2d,gamedev,game,highlight]
+tags: [lua,love2d,gamedev,game,highlight,completed]
 highlight: 2
 image:
   feature: feat/tinted-mimic-ai.png

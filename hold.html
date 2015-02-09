@@ -1,12 +1,12 @@
 ---
 layout: page
-permalink: /current/
-title: Current Projects
+permalink: /hold/
+title: Projects on Hold
 ---
 
 
 
-{% assign posts = site.tags.current | where:"current",true %}
+{% assign posts = site.tags.on_hold %}
 {% for post in posts %}
   {% if post.image.bgfill %}
     {% assign PREVIEW = post.image.bgfill %}
