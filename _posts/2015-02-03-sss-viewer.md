@@ -6,7 +6,7 @@ description: ""
 current: true
 highlight: 3
 category: projects
-tags: [webdev,highlight]
+tags: [webdev,service,highlight,current]
 image:
   feature: feat/sss-viewer.png
 ---

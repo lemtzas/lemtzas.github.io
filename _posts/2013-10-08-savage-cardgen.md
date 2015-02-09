@@ -5,7 +5,7 @@ current: false
 status: Needs Polish
 description: "Cards for 'random' character generation in Savage Worlds."
 category: projects
-tags: [sw,rpg,written]
+tags: [sw,rpg,written,hiatus]
 image:
   feature: feat/savage-cardgen.png
   thumb: thumb/savage-cardgen.png
