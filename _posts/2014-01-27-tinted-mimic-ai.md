@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tinted Mimic AI
-tagline: a quick and dirty AI
+tagline: a probabilistic player mimic
 description: "A quick AI for Tinted. It probabilistically mimics the player's actions."
 category: projects
 tags: [lua,love2d,gamedev,game,highlight,done]

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Rocket Punk
+tagline: a game about jumping on rockets
 current: true
 status: Alpha
 description: "A game about jumping on rockets made for the 2014 Cyberpunk Jam."

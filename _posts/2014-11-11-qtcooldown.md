@@ -1,6 +1,7 @@
 ---
 layout: post
 title: QtCooldown Maintenance
+tagline: fixing a plugin for Wildstar
 description: "Maintenance on a skill cooldown plugin for Wildstar"
 category: projects
 tags: [lua,addon,completed]

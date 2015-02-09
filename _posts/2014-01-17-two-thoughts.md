@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Two Thoughts Podcast
+tagline: two dudes talking about stuff
 current: false
 status: Ongoing
 description: "Craig and I discuss whatever comes to our minds."
