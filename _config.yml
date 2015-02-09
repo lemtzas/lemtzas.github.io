@@ -43,6 +43,7 @@ links:
   - title: About
     url: /about
   - title: Projects:
+    url: "#"
   - title: All
     url: /projects
   - title: Current
